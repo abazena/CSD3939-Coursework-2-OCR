@@ -12,11 +12,18 @@ public class KNearestNeighborDriver {
     private static ArrayList<Digit> DIGITS_BANK;
     private static int K;
 
+
+    /**
+     @description: KNearestNeighbor constructor to init the training data-set and K value
+     @param:  ArrayList<Digit>: digitsBank the training data-set
+     @param:  INT: K the number of  Nearest Neighbor to record
+    * */
     public KNearestNeighborDriver(ArrayList<Digit> digitsBank , int k)
     {
         DIGITS_BANK = new ArrayList<>(digitsBank);
         K = k;
     }
+
     public KNearestNeighborResult getKNearestNeighbor(Digit digit)
     {
         ArrayList<ClassifierResult> classifierResults = new ArrayList<>();

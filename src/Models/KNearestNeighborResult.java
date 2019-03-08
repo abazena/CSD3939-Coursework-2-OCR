@@ -17,7 +17,7 @@ public class KNearestNeighborResult {
         this.getFinalResult();
     }
 
-    public void getFinalResult()
+    private void getFinalResult()
     {
         int[] classes = new int[KResults.size()];
 
@@ -52,7 +52,7 @@ public class KNearestNeighborResult {
         {
             if (arr[i] == DuplicateNum)
             {
-                numOfDuplicatesFound += 1;
+                numOfDuplicatesFound++;
             }
         }
         return numOfDuplicatesFound;
